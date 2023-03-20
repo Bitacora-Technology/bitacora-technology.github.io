@@ -22,7 +22,7 @@ body {
   display: inline-block;
   height: 70px;
   width: auto;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .nav > .nav-btn {
@@ -33,7 +33,7 @@ body {
   display: inline;
   float: right;
   font-size: 22px;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .nav > .nav-links > a {
@@ -41,6 +41,11 @@ body {
   padding: 22px 12px 22px 12px;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.nav > .nav-links > a:hover {
+  color: #C21010;
+  transition: ease 0.3s;
 }
 
 .nav > #nav-check {
@@ -81,11 +86,15 @@ body {
     display: block;
     width: 100%;
   }
+  .nav > .nav-links > a:hover {
+    color: #C21010;
+    transition: ease 0.3s;
+  }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 70px);
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 }
