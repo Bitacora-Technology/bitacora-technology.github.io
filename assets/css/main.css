@@ -32,7 +32,7 @@ body {
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 22px;
+  font-size: 20px;
   margin-right: 4px;
 }
 
@@ -52,7 +52,7 @@ body {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
