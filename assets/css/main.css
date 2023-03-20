@@ -25,6 +25,10 @@ body {
   margin-left: 20px;
 }
 
+.nav > .nav-btn {
+  display: none;
+}
+
 .nav > .nav-links {
   display: inline;
   float: right;
@@ -37,4 +41,51 @@ body {
   padding: 22px 12px 22px 12px;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding: 22px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #FFFFFF;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #121212;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 70px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
 }
