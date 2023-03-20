@@ -10,9 +10,10 @@ body {
 }
 
 .nav {
+  top: 0px;
   height: 70px;
   width: 100%;
-  position: relative;
+  position: sticky;
 }
 
 .nav > .nav-header {
