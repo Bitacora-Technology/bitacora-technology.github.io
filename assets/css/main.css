@@ -95,7 +95,7 @@ body {
   transition: ease 0.3s;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
